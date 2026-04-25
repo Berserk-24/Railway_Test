@@ -1,3 +1,5 @@
+DATABASE_URL= metro.proxy.rlwy.net:49538
+
 FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
