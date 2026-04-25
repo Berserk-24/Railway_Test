@@ -1,5 +1,5 @@
-DATABASE_URL= metro.proxy.rlwy.net
-PORT=49538
+ENV DATABASE_URL= metro.proxy.rlwy.net
+ENV PORT=49538
 
 FROM node:20-alpine
 WORKDIR /app
