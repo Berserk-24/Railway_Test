@@ -1,5 +1,3 @@
-ENV DATABASE_URL= metro.proxy.rlwy.net
-ENV PORT=49538
 
 FROM node:20-alpine
 WORKDIR /app
@@ -8,4 +6,6 @@ RUN npm install --production
 RUN npm install pg
 COPY . .
 EXPOSE 3000
+ENV DATABASE_URL= metro.proxy.rlwy.net
+ENV PORT=49538
 CMD ["node", "index.js"]
